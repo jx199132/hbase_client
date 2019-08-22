@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+	<property>
+		<name>hbase.zookeeper.quorum</name>
+		<!--这里最开始用的是ip，启动的时候客户端连接的时候会出现错误-->
+		<!-- Will not attempt to authenticate using SASL (unknown error) -->
+		<!-- 因为zookeeper配置的是域名，这里要一致对应 -->
+		<value>dn01,dn02,dn03</value>
+	</property>
+
+</configuration>
